@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de Johana Bastidas, especialista en Seguridad y Salud en el Trabajo.">
+  <title>Johana Bastidas - Seguridad y Salud en el Trabajo</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #00bfa6;
+      --dark-bg: #1e2a38;
+      --light-bg: #f4f4f4;
+      --text-dark: #1e2a38;
+      --text-light: #ffffff;
+      --font-title: 'Montserrat', sans-serif;
+      --font-body: 'Open Sans', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      background: var(--dark-bg);
+      color: var(--text-light);
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--primary-color);
+    }
+
+    section {
+      padding: 100px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Hero */
+    #hero {
+      height: 100vh;
+      background: var(--dark-bg);
+      color: var(--text-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    #hero h1 {
+      font-family: var(--font-title);
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    #hero h2 {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    #hero p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .btn-primary {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background: #009e90;
+    }
+
+    /* About */
+    #about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    #about img {
+      max-width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    #about div p {
+      margin-bottom: 1rem;
+    }
+
+    /* Skills */
+    #skills .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-block h4 {
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .bar-container {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+    }
+
+    .bar {
+      height: 10px;
+      background: var(--primary-color);
+    }
+
+    /* Education */
+    #education {
+      background: var(--light-bg);
+      border-radius: 8px;
+      padding: 2rem;
+    }
+
+    /* Contact */
+    #contact form {
+      display: grid;
+      gap: 1rem;
+      max-width: 600px;
+    }
+
+    #contact input, #contact textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--dark-bg);
+      color: var(--text-light);
+    }
+
+    @media (max-width: 768px) {
+      #about {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div><strong>Johana Bastidas</strong></div>
+      <div>
+        <a href="#hero" class="nav-link">Inicio</a>
+        <a href="#about" class="nav-link">Sobre Mí</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#education" class="nav-link">Educación</a>
+        <a href="#contact" class="nav-link">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>La seguridad es un compromiso, la salud es un valor</h1>
+    <h2>Johana Bastidas</h2>
+    <p>Protegemos la salud y seguridad de tus colaboradores con soluciones personalizadas y efectivas.</p>
+    <a href="#projects"><button class="btn-primary">Ver Mis Proyectos</button></a>
+  </section>
+
+  <section id="about">
+    <img src="C:\Users\Jhoana Bastidas\Downloads\portafolio.png" alt="Foto de Johana Bastidas">
+    <div>
+      <h2>Sobre Mí</h2>
+      <p>Mi camino profesional ha sido una mezcla de aprendizaje, curiosidad y ganas de hacer las cosas bien.</p>
+      <p>Me gusta resolver problemas, proponer ideas y trabajar en equipo para lograr buenos resultados.</p>
+      <p>Soy una persona responsable, creativa y con muchas ganas de seguir creciendo.</p>
+      <p>A corto plazo quiero seguir aprendiendo y, más adelante, poder liderar proyectos que marquen una diferencia.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Mis Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-block">
+        <h4>Lenguajes y Frameworks</h4>
+        <div>JavaScript <div class="bar-container"><div class="bar" style="width: 60%"></div></div></div>
+        <div>Python <div class="bar-container"><div class="bar" style="width: 50%"></div></div></div>
+        <div>Java <div class="bar-container"><div class="bar" style="width: 40%"></div></div></div>
+        <div>React / Angular <div class="bar-container"><div class="bar" style="width: 40%"></div></div></div>
+      </div>
+
+      <div class="skill-block">
+        <h4>Herramientas</h4>
+        <ul>
+          <li>Excel (Básico)</li>
+          <li>Word (Medio)</li>
+          <li>PowerPoint (Básico)</li>
+        </ul>
+      </div>
+
+      <div class="skill-block">
+        <h4>Habilidades Blandas</h4>
+        <div>Trabajo en equipo <div class="bar-container"><div class="bar" style="width: 90%"></div></div></div>
+        <div>Liderazgo <div class="bar-container"><div class="bar" style="width: 60%"></div></div></div>
+        <div>Responsabilidad <div class="bar-container"><div class="bar" style="width: 90%"></div></div></div>
+        <div>Adaptabilidad <div class="bar-container"><div class="bar" style="width: 85%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Educación</h2>
+    <p><strong>Título:</strong> Técnico en Seguridad y Salud en el Trabajo</p>
+    <p><strong>Institución:</strong> Politécnico de Occidente</p>
+    <p><strong>Fechas:</strong> 2023 – 2025</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Asunto" required>
+      <textarea rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit" class="btn-primary">Enviar Mensaje</button>
+    </form>
+    <p>Email directo: <a href="mailto:johanabastidas568@gmail.com">johanabastidas568@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Johana Bastidas. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Scrollspy: resalta el enlace activo en el menú
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+  
